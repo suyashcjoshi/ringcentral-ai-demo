@@ -1,18 +1,6 @@
 <h1 align="center" style="border-bottom: none;">🎤 Speech to Text Demo </h1>
-<h3 align="center">Node.js sample applications that shows some of the the IBM Watson Speech to Text service features.</h3>
-<p align="center">
-  <a href="http://travis-ci.org/watson-developer-cloud/speech-to-text-nodejs">
-    <img alt="Travis" src="https://travis-ci.org/watson-developer-cloud/speech-to-text-nodejs.svg?branch=master">
-  </a>
-  <a href="#badge">
-    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
-  </a>
-</p>
-</p>
+<h3 align="center">Node.js sample applications that shows IBM Watson Speech to Text service with RingCentral Data.</h3>
 
-The [Speech to Text][service_url] service uses IBM's speech recognition capabilities to convert speech in multiple languages into text. The transcription of incoming audio is continuously sent back to the client with minimal delay, and it is corrected as more speech is heard. The service is accessed via a WebSocket interface; a REST HTTP interface is also available;
-
-You can view a [demo][demo_url] of this app.
 
 ## Prerequisites
 
