@@ -20,9 +20,14 @@ RingCentral
 Meetings, Read Call Log, Read Call Recording
 - Click 'Create' and your application will be created
 
-2. Getting RingCentral Data
+2. Install RingCentral SDK and other dependencies
 
-## Steps for RingCentral Video (rcv.js) API
+```
+git clone https://github.com/suyashjoshi/ringcentral-ai-demo
+npm install
+```
+
+## Configure RingCentral Video (rcv.js) API
 
 - You will need to use RingCentral Video API, currently that is in 'early access beta' so sign up here for requesting access to the same
 - Once you have access, login to App Console and paste the credentials in rcv.js file
@@ -36,7 +41,7 @@ Note: If you're using RingCentral Meeting API, refer to this page https://develo
     node rc-call-recordings.js
 ```
 
-## RingCentral Call Recording API
+## Configure RingCentral Call Recording API
 
 3. RingCentral Call Recording API
 
@@ -46,11 +51,11 @@ Note: If you're using RingCentral Meeting API, refer to this page https://develo
 ```
 
 
-IBM
+## Configure IBM
 
 1. You need an [IBM Cloud account](https://cloud.ibm.com/registration/).
-1. Download the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started#overview).
-1. Create an instance of the Speech to Text service and get your credentials:
+2. Download the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started#overview).
+3. Create an instance of the Speech to Text service and get your credentials:
     - Go to the [Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) page in the IBM Cloud Catalog.
     - Log in to your IBM Cloud account.
     - Click **Create**.
@@ -58,15 +63,13 @@ IBM
     - Copy the `apikey` value.
     - Copy the `url` value.
 
-## Configuring the application
-
-1. In the application folder, copy the *.env.example* file and create a file called *.env*
+4. In the application folder, copy the *.env.example* file and create a file called *.env*
 
     ```
     cp .env.example .env
     ```
 
-2. Open the *.env* file and add the service credentials that you obtained in the previous step.
+5. Open the *.env* file and add the service credentials that you obtained in the previous step.
 
     Example *.env* file that configures the `apikey` and `url` for a Speech to Text service instance hosted in the US East region:
 
@@ -84,16 +87,16 @@ IBM
     ```
 Get the data
 
-1. Run the rcv.js to get RingCentral Video Meeting Data
+2. Run the rcv.js to get RingCentral Video Meeting Data
 
     ```
-    npm start
+    node rcv.js
     ```
 
 1. Run the rc-call-recording.js to get RingCentral Call Data
 
     ```
-    npm start
+    node rc-call-recordings.js
     ```
 
 1. Run the AI Webapp
@@ -114,5 +117,5 @@ Get the data
 
 ## Support
 
-- Open pull request
-- Ask question related to this demo on RingCentral Developer Forum
+- Open pull request with any questions/issues/errors
+- Ask question related to this demo on [RingCentral Developer Forum](https://developers.ringcentral.com/community.html)
