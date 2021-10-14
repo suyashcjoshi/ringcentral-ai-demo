@@ -1,10 +1,10 @@
-<h1 align="center" style="border-bottom: none;">🎤 Speech to Text Demo </h1>
+<h2 align="center" style="border-bottom: none;">🎤 AI Demo </h2>
 <h3 align="center">Node.js sample applications that shows IBM Watson Speech to Text service with RingCentral Data.</h3>
 
 
 ## Prerequisites
 
-RingCentral
+### Configure RingCentral
 
 
 1. Create an application on RingCentral
@@ -109,7 +109,7 @@ Get the data
 
 ## Credits:
 
-### IBM Watson orignal Sppech to Text App and resources
+#### IBM Watson orignal Sppech to Text App and resources
 [demo_url]: https://speech-to-text-demo.ng.bluemix.net
 [service_url]: https://www.ibm.com/cloud/watson-speech-to-text
 [docs]: https://cloud.ibm.com/apidocs/speech-to-text
