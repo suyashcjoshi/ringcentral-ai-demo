@@ -1,5 +1,5 @@
-<h2 align="center" style="border-bottom: none;">🎤 AI Demo </h2>
-<h3 align="center">Node.js sample applications that shows IBM Watson Speech to Text service with RingCentral Data.</h3>
+<h2 align="center" style="border-bottom: none;">🎤 AI (Speech to Text) Demo </h2>
+<h3 align="center">Node.js sample applications that shows IBM Watson Speech to Text service with RingCentral Data (Meeting Recording/Call Recording).</h3>
 
 
 ## Prerequisites
@@ -31,7 +31,7 @@ npm install
 - You will need to use RingCentral Video API, currently that is in 'early access beta'. You can [request access here](https://developers.ringcentral.com/guide/meetings/video) 
 - Once you have access, login to App Console and paste the credentials in rcv.js file
 - We will call the "Meeting History API" to get the meeting logs and media content URI
-- Finally, we will see the URL to download the .mp4 file in the console after the following code is executed:
+- Lastly, we will see the URL to download the .mp4 file in the console. Use web-browser to curl to download the .mp4 file. You then need to convert it to .mp3 or .wav format in order to use this this AI model as it only works with audio file.
 - Open the project and navigate to 'rcv.js' file. Here you need to read the comments and update the fields with your credentials that you acquired in the previous step.
 
 ```
