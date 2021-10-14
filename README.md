@@ -111,10 +111,8 @@ Get the data
 ## Credits:
 
 #### IBM Watson orignal Sppech to Text App and resources
-[demo_url]: https://speech-to-text-demo.ng.bluemix.net
-[service_url]: https://www.ibm.com/cloud/watson-speech-to-text
-[docs]: https://cloud.ibm.com/apidocs/speech-to-text
-[sign_up]: https://cloud.ibm.com/registration/?target=/catalog/services/speech-to-text/
+- IBM Demo: https://speech-to-text-demo.ng.bluemix.net
+- Speech to Text AI API Docs : https://cloud.ibm.com/apidocs/speech-to-text
 
 ## Support
 
