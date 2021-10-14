@@ -1,0 +1,91 @@
+{
+  "name": "@ibm-watson/speech-to-text-nodejs",
+  "version": "2.2.0",
+  "description": "A sample browser app for Bluemix that use the speech-to-text service, fetching a token via Node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson-developer-cloud/speech-to-text-nodejs.git"
+  },
+  "engines": {
+    "node": ">=12.0"
+  },
+  "author": "IBM Corp.",
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+          "corejs": 3
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/watson-developer-cloud/speech-to-text-nodejs/issues"
+  },
+  "scripts": {
+    "rc-data": "node rcv.js",
+    "demo": "node server.js",
+    "test-integration": "casperjs test ./test/integration/test.*.js",
+    "test-integration-runner": "NODE_ENV=test node casper-runner.js",
+    "test": "npm run lint && npm run test-unit && npm run test-integration-runner",
+    "test-unit": "mocha test/unit/ --exit",
+    "lint": "eslint .",
+    "autofix": "eslint --fix .",
+    "codecov": "npm run test && (codecov || true)"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/register": "^7.13.8",
+    "babel-eslint": "^10.1.0",
+    "babelify": "^10.0.0",
+    "core-js": "^3.9.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-browserify": "^1.0.3",
+    "express-rate-limit": "^5.2.6",
+    "express-react-views": "^0.11.0",
+    "express-secure-only": "^0.2.1",
+    "helmet": "^3.23.3",
+    "ibm-watson": "^5.7.3",
+    "open": "^8.3.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.4",
+    "react-dom": "^16.14.0",
+    "react-dropzone": "^4.3.0",
+    "react-mailto": "^0.4.0",
+    "react-router-dom": "^5.3.0",
+    "regenerator-runtime": "^0.13.7",
+    "ringcentral": "^3.3.0",
+    "uglifyify": "^5.0.2",
+    "watson-react-components": "^0.6.19",
+    "watson-speech": "^0.39.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "casperjs": "^1.1.4",
+    "codecov": "^3.8.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "mocha": "^6.2.3",
+    "nock": "^11.9.1",
+    "phantomjs-prebuilt": "^2.1.16",
+    "supertest": "^4.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
