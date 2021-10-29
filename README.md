@@ -1,6 +1,7 @@
 <h2 align="center" style="border-bottom: none;">🎤 AI (Speech to Text) Demo </h2>
 <h3 align="center">Node.js sample applications that shows IBM Watson Speech to Text service with RingCentral Data (Meeting Recording/Call Recording).</h3>
 
+![alt text](https://github.com/suyashjoshi/ringcentral-ai-demo/blob/master/images/ScreenShot.png?raw=true)
 
 ## Prerequisites
 
