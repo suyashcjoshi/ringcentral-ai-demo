@@ -4,7 +4,7 @@
 ![alt text](https://github.com/suyashjoshi/ringcentral-ai-demo/blob/master/images/ScreenShot.png?raw=true)
 
 
-## INtroduction
+## Introduction
 
 This is a Node.JS based application that uses 2 main technologies - IBM Watson's Speech to Text AI Service and RingCentral's Platform to flag certain keywords when spotted in the recording, in this case for complaince reason but you can change that to anything. First we download Call and Meeting recording and detailed teps to achive the same as documented below. Then, we confifure in the GUI - Speech to Text Model for any given languages, 'Complaince Keyworkds' that you want to look for in the trasncribed speech etc and run the app by either direct speech input or by using the audio recordings.
 
